@@ -1,4 +1,4 @@
-#Tue Jul 13 12:00:26 IST 2021
-base.0=/Users/ttf/AndroidStudioProjects/idc_assignment/build/app/intermediates/dex/release/minifyReleaseWithR8/classes.dex
+#Tue Jul 13 13:08:49 IST 2021
+base.0=/Users/ttf/StudioProjects/IDC_Assignment/build/app/intermediates/dex/release/minifyReleaseWithR8/classes.dex
 path.0=classes.dex
 renamed.0=classes.dex

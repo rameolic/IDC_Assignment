@@ -4,7 +4,7 @@ import 'package:idc_assignment/constants.dart';
 import 'package:otp_text_field/otp_text_field.dart';
 import 'package:otp_text_field/style.dart';
 import 'dart:async';
-
+import 'package:idc_assignment/services/Hapticfeedback.dart';
 
 
 ///to avoid null safety a default number.
@@ -84,11 +84,17 @@ class _LoginPageState extends State<LoginPage> {
                               otpentered = true;
                               if (int.parse(value) == 858585) {
                                 print("here");
+                                ///small haptic feedback is given to user to notify if OTP is valid
+                                SmallHapticFeedback(true);
                                 setState(() {
                                   otpverified = true;
                                 });
                               } else {
                                 print("Incorrect");
+                                if(value.length == 6){
+                                  ///large haptic feedback is given to user to notify if OTP is invalid
+                                  SmallHapticFeedback(false);
+                                }
                                 setState(() {
                                   otpverified = false;
                                 });
@@ -103,15 +109,6 @@ class _LoginPageState extends State<LoginPage> {
                             style: TextStyle(fontSize: 17),
                             textFieldAlignment: MainAxisAlignment.spaceAround,
                             fieldStyle: FieldStyle.underline,
-                            // onCompleted: (pin) {
-                            //   otpentered = true;
-                            //   if(int.parse(pin) == 858585 ){
-                            //     otpverified = true;
-                            //   }else{
-                            //     otpverified = false;
-                            //   }
-                            //   print("Completed: " + pin);
-                            // },
                           ),
                         )
                       : Row(
@@ -139,6 +136,8 @@ class _LoginPageState extends State<LoginPage> {
                                       numberverfied = false;
                                     });
                                   } else {
+                                    ///small haptic feedback is given to user to notify if number is valid
+                                    SmallHapticFeedback(true);
                                     setState(() {
                                       numberverfied = true;
                                     });

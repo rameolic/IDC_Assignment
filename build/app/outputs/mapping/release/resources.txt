@@ -170,6 +170,8 @@ Referenced Strings:
   STANDARD
   STARTED
   SettingsChannel
+  ShimPluginRegistry
+  ShimRegistrar
   SystemChannel
   SystemChrome.restoreSystemUIOverlays
   SystemChrome.setApplicationSwitcherDe...
@@ -278,6 +280,7 @@ Referenced Strings:
   birthdayMonth
   birthdayYear
   cached_engine_id
+  canVibrate
   cell
   character
   clearFocus
@@ -307,6 +310,7 @@ Referenced Strings:
   display
   dispose
   domain
+  duration
   editingValue
   email
   emailAddress
@@ -321,6 +325,7 @@ Referenced Strings:
   fields
   flags
   flutter
+  flutter.plugins.vibrate.VibratePlugin
   flutter/accessibility
   flutter/deferredcomponent
   flutter/isolate
@@ -352,12 +357,14 @@ Referenced Strings:
   grab
   grabbing
   handled
+  heavy
   height
   help
   hints
   hybrid
   id
   image
+  impact
   includeSubdomains
   inputAction
   inputType
@@ -389,6 +396,7 @@ Referenced Strings:
   mNextServedView
   mServedView
   main
+  medium
   memoryPressure
   message
   metaState
@@ -471,6 +479,7 @@ Referenced Strings:
   resizeUpRightDownLeft
   route
   scanCode
+  selection
   selectionBase
   selectionExtent
   setDirection
@@ -483,6 +492,7 @@ Referenced Strings:
   statusBarIconBrightness
   streetAddress
   string
+  success
   surface
   systemNavigationBarColor
   systemNavigationBarDividerColor
@@ -510,9 +520,12 @@ Referenced Strings:
   value
   vendorId
   verticalText
+  vibrate
+  vibrator
   viewFocused
   viewType
   wait
+  warning
   width
   window
   write
