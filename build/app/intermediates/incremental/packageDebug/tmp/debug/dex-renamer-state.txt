@@ -1,0 +1,4 @@
+#Tue Jul 13 11:59:42 IST 2021
+base.0=/Users/ttf/AndroidStudioProjects/idc_assignment/build/app/intermediates/dex/debug/mergeDexDebug/classes.dex
+path.0=classes.dex
+renamed.0=classes.dex
